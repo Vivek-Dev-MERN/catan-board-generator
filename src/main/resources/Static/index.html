@@ -164,7 +164,7 @@
 
     async function fetchBoard() {
         try {
-            const response = await fetch('http://localhost:8080/api/board');
+            const response = await fetch('/api/board');
             if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
             const boardData = await response.json();
